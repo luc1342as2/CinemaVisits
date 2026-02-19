@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Movie details — Cinema History</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+  <header class="site-header movie-detail-header">
+    <div class="header-inner header-movie-row">
+      <a href="index.html" class="back-link">← Timeline</a>
+      <nav class="header-movie-nav" aria-label="Movie navigation">
+        <a href="#" class="movie-nav-btn movie-nav-prev" aria-label="Previous movie" title="Previous movie">←</a>
+        <a href="#" class="movie-nav-btn movie-nav-next" aria-label="Next movie" title="Next movie">→</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content movie-detail-page">
+    <article class="movie-article">
+      <h1 class="movie-title-centered" id="movie-title">—</h1>
+      <p class="movie-cinema-date" id="movie-date">—</p>
+
+      <div class="movie-info-section">
+        <dl class="movie-meta">
+          <div class="movie-meta-row">
+            <dt>Genre</dt>
+            <dd id="movie-genre">—</dd>
+          </div>
+          <div class="movie-meta-row">
+            <dt>Release year</dt>
+            <dd id="movie-releaseYear">—</dd>
+          </div>
+          <div class="movie-meta-row">
+            <dt>Director</dt>
+            <dd id="movie-director">—</dd>
+          </div>
+          <div class="movie-meta-row">
+            <dt>Runtime</dt>
+            <dd id="movie-runtime">—</dd>
+          </div>
+          <div class="movie-meta-row">
+            <dt>Cast</dt>
+            <dd id="movie-actors">—</dd>
+          </div>
+        </dl>
+        <section class="movie-story-section" aria-label="Story">
+          <h2 class="movie-story-title">Story</h2>
+          <p class="movie-description" id="movie-description"></p>
+        </section>
+        <p class="movie-trivia" id="movie-trivia"></p>
+      </div>
+
+      <section class="movie-trailer-section" aria-label="Trailer">
+        <h2 class="movie-trailer-title">Trailer</h2>
+        <div class="movie-trailer-wrap" id="trailer-wrap">
+          <iframe id="trailer-iframe" title="Movie trailer" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <a id="trailer-link" class="movie-trailer-link" href="#" target="_blank" rel="noopener noreferrer">Guarda il trailer</a>
+        </div>
+      </section>
+
+      <nav class="movie-nav" aria-label="Movie navigation">
+        <a href="#" class="movie-nav-btn movie-nav-prev" aria-label="Previous movie" title="Previous movie">←</a>
+        <a href="index.html" class="timeline-btn">Back to timeline</a>
+        <a href="#" class="movie-nav-btn movie-nav-next" aria-label="Next movie" title="Next movie">→</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>2024 All Right Deserved Lucas Ghigli</p>
+  </footer>
+
+  <script src="movies-data.js"></script>
+  <script src="movie.js"></script>
+</body>
+</html>

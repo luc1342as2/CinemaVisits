@@ -15,7 +15,11 @@
   var container = document.getElementById("timeline-dots");
   if (!container) return;
 
-  MOVIES.forEach(function (movie) {
+  var sortedMovies = MOVIES.slice().sort(function (a, b) {
+    return new Date(b.date) - new Date(a.date);
+  });
+
+  sortedMovies.forEach(function (movie) {
     var item = document.createElement("div");
     item.className = "timeline-item";
     item.setAttribute("data-movie-id", movie.id);
@@ -84,3 +88,4 @@
     });
   });
 })();
+
